@@ -1,0 +1,199 @@
+<!---header--->
+<table border="0" width="100%" cellspacing="0" bgcolor="#673de6">
+<tr><td>
+<table border="0" width="85%" align="center"cellpadding="15">
+<tr>
+<td>
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<style type="text/css">
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+</style>
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+</td>
+<td><font face="Aviatica" size="5" color="white"><b>Learn with Jay</b></font></td>
+<td width="20%"></td>
+<td><a href="/storage/emulated/0/Html files/Index.html" ><font color="#fff">Home</font></a></td>
+<td><a href="/storage/emulated/0/Html files/Ideas.html" ><font color="#fff">Ideas</font></a></td>
+<td><a href="/storage/emulated/0/Html files/Skills.html" ><font color="#fff">Skills</font></a></td>
+<td><a href="/storage/emulated/0/Html files/Suggestion.html" ><font color="#fff">Suggestions</font></a></td>
+<td><a href="/storage/emulated/0/Html files/Embeds.html" ><font color="#fff">Our videos</font></a></td>
+<td><a href="https://youtube.com/@JayCubing?sub confirmation=1" ><font color="#fff">Our other channel</font></a></td>
+</tr>
+</table>
+</td></tr>
+</table><br>
+<!---Endheader--->
+
+<!---Ideas--->
+<style>
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+</style>
+<script type="text/javascript">
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+</script>
+<div class="loader"></div>
+<style>
+body{
+height:100vh;
+display: grid;
+place items: center;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: rgb(241, 26, 26);
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="lds-facebook">
+<div></div>
+<div></div>
+<div></div>
+</div>
+<table width="50%">
+<tr align="center">
+<td align="center"
+<font size="6"><b>Our Ideas!</b></font><br><hr align="center" width="10%">
+<font size="3">These are the Videos' Topics we upload </font><br><hr>
+<table width="80%" border="0" align="center" cellpadding="15px">
+<tr align="center">
+<td colspan="3" align="center">
+<img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20230410-WA0002.jpg" width="85%"></marquee>
+<font size="5">Computers Topics</font><br>
+<font size="3">Our channel uploads videos related to modern Computer Science Topics like HTML,CSS&Javascript</font><br>
+</td>
+<td>
+<img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20230410-WA0004.jpg" width="100%"></marquee>
+<font size="5">Science and Maths Topics</font><br>
+<font size="3">Our channel uploads videos related to modern  Science & Maths Topics</font><br>
+</td>
+<td>
+<img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20230410-WA0003.jpg" width="90%" border="10"></marquee><br><br>
+<font size="5">Sports History and its Significance</font><br>
+<font size="3">Our channel uploads videos featuring Sports and its Significance </font><br>
+</td>
+<td>
+<img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20230410-WA0005.jpg" width="90%" height="80" border="10"></marquee><br><br>
+<font size="5">Social Science</font><br>
+<font size="3">Our channel uploads videos related to Socail Science</font><br>
+</td>
+<td>
+<img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20230410-WA0001.jpg" width="100%" height="80"></marquee><br><br>
+<font size="5"> Cube solving videos</font><br>
+<font size="3">Our channel uploads videos which features the cube solving </font><br>
+</td>
+</tr>
+</td>
+</tr>
+</table>
+<!---EndIdeas--->

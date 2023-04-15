@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content= "width-device-width"", initial-scale=1/>
+<font color="white"> 
+<title>Learn with Jay</title></font>
+<style>
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #009578;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+</style>
+<script type="text/javascript">
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+</script>
+<div class="loader"></div>
+
+<!---header--->
+<table border="0" width="100%" cellspacing="0" bgcolor="#673de6">
+<tr><td>
+<table border="0" width="85%" align="center"cellpadding="15">
+<tr>
+<td>
+<div class="container" onclick="myFunction(this)">
+ <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<style type="text/css">
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+</style>
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+</td>
+<td><font face="Aviatica" size="5" color="white"><b>Learn with Jay</b></font></td>
+<td width="20%"></td>
+<td><a href="/storage/emulated/0/Html files/Index.html"><font color="#fff">Home</font></a></td>
+<td><a href="/storage/emulated/0/Html files/Ideas.html" ><font color="#fff">Ideas</font></a></td>
+<td><a href="/storage/emulated/0/Html files/Skills.html" ><font color="#fff">Skills</font></a></td>
+<td><a href="/storage/emulated/0/Html files/Suggestion.html" ><font color="#fff">Suggestions</font></a></td>
+<td><a href="/storage/emulated/0/Html files/Embeds.html" ><font color="#fff">Our videos</font></a></td>
+<td><a href="https://youtube.com/@JayCubing?sub confirmation=1k" ><font color="#fff">Our other channel</font></a></td>
+</tr>
+</table>
+</td></tr>
+</table><br>
+<!---Endheader--->
+<style type="text/css">
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+</style>
+<style>
+body{
+height:100vh;
+display: grid;
+place items: center;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: rgb(241, 26, 26);
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="lds-facebook">
+<div></div>
+<div></div>
+<div></div>
+</div>
+<!---Home--->
+<table> 
+<tr><td>
+<table width="85%" border="0">
+<tr>
+<td>
+<b><h1><font face="Open sans" size="7">Hi</font></h1></b>
+<b><h1><font face="Open sans" size="6">Welcome</font></h1></b>
+<font size="3">This is the official website of the youtube channel Learn with Jay</font><br><br>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content= "width-device-width"", initial-scale=1/>
+
+<style type="text/css">
+.mybutton1{
+ border: none;
+ outline: none;
+ text-align: center;
+ font-size: 15px;
+ padding: 10px 22px;
+ background-color: red;
+ color: white;
+ cursor: pointer;
+ width: auto;
+ height: auto;
+ border-radius: 5px;
+ }
+ .mycenter{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ }
+</style>
+<div class="mycenter">
+<button class="mybutton1"><a href="/storage/emulated/0/Html files/Index.html">Download Website</button>
+</a>
+</div>
+
+
+<td align="center"><marquee> <img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20230402-WA0003.jpg" height="300px" ></marquee></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-title="Learn with Jay">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_gmail"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_facebook_messenger"></a>
+</div>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+
+
+</body>
+<!---EndHome--->
+
+<!---Ideas--->
+<table width="100%">
+<tr align="center">
+<td align="center"
+<font size="6"><b>Our Ideas!</b></font><br><hr align="center" width="10%">
+<font size="3">These are the Videos' Topics we upload </font><br><hr>
+<table width="80%" border="0" align="center" cellpadding="15px">
+<tr align="center">
+<td colspan="3" align="center">
+<img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20230410-WA0002.jpg" width="85%"></marquee>
+<font size="5">Computers Topics</font><br>
+<font size="3">Our channel uploads videos related to modern Computer Science Topics like HTML,CSS&Javascript</font><br>
+</td>
+<td>
+<img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20230410-WA0004.jpg" width="100%"></marquee>
+<font size="5">Science and Maths Topics</font><br>
+<font size="3">Our channel uploads videos related to modern  Science & Maths Topics</font><br>
+</td>
+<td>
+<img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20230410-WA0003.jpg" width="90%" border="10"></marquee><br><br>
+<font size="5">Sports History and its Significance</font><br>
+<font size="3">Our channel uploads videos featuring Sports and its Significance </font><br>
+</td>
+<td>
+<img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20230410-WA0005.jpg" width="90%" height="80" border="10"></marquee><br><br>
+<font size="5">Social Science</font><br>
+<font size="3">Our channel uploads videos related to Socail Science</font><br>
+</td>
+<td>
+<img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20230410-WA0001.jpg" width="100%" height="80"></marquee><br><br>
+<font size="5"> Cube solving videos</font><br>
+<font size="3">Our channel uploads videos which features the cube solving </font><br>
+</td>
+</tr>
+</td>
+</tr>
+</table>
+<!---EndIdeas--->
+
+<!---Skills--->
+
+<table width="100%" bgcolor="black">
+<tr>
+<td>
+<table border="0" width="85%" align="center" cellpadding="15px">
+<tr align="center"><td colspan="2"><font  face="Open Sans" size="6" color="white">Skills</font>
+<hr align="center" width="7%"</td></tr>
+<tr>
+<td><label> <font  size="4" color="white">Communication</font></label><progress value="100" maxvalue="100">100% </progress></td>
+<td><label><font  size=''4" color="white">Content</font></label><progress value="100" maxvalue="100">100%</progress></td>
+</font>
+</tr>
+</table>
+</td>
+</tr>
+</table><br><br><br><hr width="15%">
+
+<!---EndSkills--->
+
+<!---Suggestion--->
+<b><b>PLEASE SHARE YOUR VIEWS AND SUGGESTIONS</b></b><br><br>
+<form>
+<b> Name:</b><input type="text" id="ip2"/><br><br>
+<b> Email id:</b><input type="text" id="ip2"/><br><br>
+
+</form><br>
+<textarea columns="10" rows="10">
+Please share your experience with us
+</textarea><br>
+<img src="/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp Images/IMG-20230410-WA0000.jpg" height="300px"><br><br>
+<a href="/storage/emulated/0/Html files/Suggestion submit.html" ><input type="submit" name="submit" value="Submit" id="#input_125"></a><br><br>
+<a href="/storage/emulated/0/Html files/Index.html" ><input type="reset" name="reset" value="Reset"id="#input_125"></a><br><br><br>
+<style type="text/css">
+#ip2 {
+    border-radius: 25px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px;    
+}
+</style>
+<style type="text/css">
+#input_125
+{
+  background: green;
+}
+</style>
+<!---EndSuggestion--->
+
+<b><h1>Our popular videos</h1></b><br><br><br>
+
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/Lk4m4OE1cQ4?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe><br><br><br>
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/do7pApKcRfs?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode.com/en/</a></small></div><div><small><a href="https://playoldgames.org/">https://playoldgames.org/</a></small></div></iframe><br><br><br>
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/gyVP266HXG4?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode nl</a></small></div><div><small><a href="https://xn--snabbln5000-28a.com/lana-10000-kr/">låna 10000 snabbt</a></small></div><div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode.com/nl/</a></small></div><div><small><a href="https://snabblån5000.com/lana-9000/">låna 9000</a></small></div><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode en</a></small></div><div><small><a href="https://snabblån5000.com/lana-9000/">låna 9000</a></small></div><div><small><a href="https://youtubeembedcode.com/pl/">youtubeembedcode pl</a></small></div><div><small><a href="https://uuc.nu/">uuc.nu</a></small></div><8/iframe><br><br><br>
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/9MgVLqr7Ax4?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/de/">youtubeembedcode de</a></small></div><div><small><a href="https://xn--snabbln5000-28a.com/">låna 5000 med betalningsanmärkning</a></small></div></iframe><br><br><br>
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/IKb2gQ7RXdk?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode.com/nl/</a></small></div><div><small><a href="https://uuc.nu/">lån utan UC</a></small></div></iframe><br><br><br>
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/AFE_vGoEujU?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode en</a></small></div><div><small><a href="https://snabblån5000.com/lana-4000/">låna 4000</a></small></div></iframe><br><br><br>
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/xJAJoiOuB6s?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/pl/">youtubeembedcode.com/pl/</a></small></div><div><small><a href="yatzyregler.se/">yatzyregler.se/</a></small></div></iframe><br><br><br>
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/XFG07MZd-9U?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode.com/en/</a></small></div><div><small><a href="https://xn--snabbln5000-28a.com/">https://xn--snabbln5000-28a.com/</a></small></div></iframe><br><br><br>
+<!---Footer--->
+<h1>Thanking You.......</h1>
+<footer>
+<div class="footer">
+  <div class="contain">
+  <div class="col" width="1000%">
+    <h2>Website headings</h2>
+    <ul>
+    <li>Ideas</li>
+        <li>Skills</li>
+            <li>Videos</li>
+                <li>Our other channel</li>
+    </ul>
+  </div>
+ 
+  
+  
+  
+  <div class="col" width="100%">
+  <h2>DESCRIPTION</h2>
+  <ul>
+  <li>
+  
+  Learning is fun! Jayanth will be sharing you videos related to science includes chemistry,biology and physics, Maths and computer science! and kannada grammar and also about sports, and about sportsmen as well
+  
+  English,Social studies and 
+  
+ Many Interesting facts<br><br>
+ 
+ <font size="1">
+<b>Learn with Jay|©Copyrights reserved 2023</b>
+</font>
+ </li>
+</ul></div>
+<div class="col" width="10000%">
+<h2>Our Ideas</h2>
+<ul>
+<li>Cube solving videos</li>
+<li>Science related videos</li>
+<li>Maths videos</li>
+<li>Programming(Computer)videos</li>
+</ul>
+</div>
+<div class="col" width="10000%">
+<h2>Our Pages</h2>
+<ul>
+<li><a href="https://youtube.com/@Learnwithjay_">Youtube</a></li>
+<li><a href="https://instagram.com/learnwithjayanth?igshid=YmMyMTA2M2Y=">Instagram</a></li>
+<li><a href="https://twitter.com/Education1Jay?t=zEKqmgtm-9AtE4lyn_bliQ&s=09">Twitter</a></li>
+</ul>
+</div>
+<div class="col" width="100%">
+  <h2>Subscribe</h2>
+<style type="text/css">
+.mybutton1{
+ border: none;
+ outline: none;
+ text-align: center;
+ font-size: 15px;
+ padding: 10px 22px;
+ background-color: red;
+ color: white;
+ cursor: pointer;
+ width: auto;
+ height: auto;
+ border-radius: 5px;
+ }
+ .mycenter{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ }
+</style>
+<button class="mybutton1"><a href="/storage/emulated/0/Html files/Index.html">SUBSCRIBE</button>
+</a>
+</div>
+<div class="clearfix"></div>
+</div>
+<style type="text/css">
+.footer {
+  width: 100%;
+  background-color: black;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.footer .col h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 17px;
+  padding: 10px 0;
+  color: #FF0063;
+  text-transform: uppercase;
+}
+.footer .col ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer .col ul li {
+  color: white;
+  font-size: 12px;
+  padding: 5px 0px;
+}
+.address ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  cursor: pointer;
+  color: lightgray;
+  font-weight: bold;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .address {
+    width: 1000px;
+    display: block;
+  }
+  .address h2 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h2 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h2 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+</style>
+</footer>
+<!---EndFooter--->
+
+<!-- Font Awesome 5.15.1 CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+<div class="wrapper">
+  <a href="#" class="icon facebook">
+    <div class="tooltip">Facebook</div>
+    <span><i class="fab fa-facebook-f"></i></span>
+  </a>
+  <a href="#" class="icon twitter">
+    <div class="tooltip">Twitter</div>
+    <span><i class="fab fa-twitter"></i></span>
+  </a>
+  <a href="#" class="icon instagram">
+    <div class="tooltip">Instagram</div>
+    <span><i class="fab fa-instagram"></i></span>
+  </a>
+  <a href="#" class="icon github">
+    <div class="tooltip">Github</div>
+    <span><i class="fab fa-github"></i></span>
+  </a>
+  <a href="" class="icon youtube">
+    <div class="tooltip">Youtube</div>
+    <span><i class="fab fa-youtube"></i></span>
+  </a>
+</div>
+<style type="text/css">
+.wrapper .icon{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+</style>
+</body>
+</html>
